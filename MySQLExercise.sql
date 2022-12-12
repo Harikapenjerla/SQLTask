@@ -69,7 +69,11 @@ select * from Orders where (orderdate between '2020-01-01' and '2022-12-31' )ord
 
 #Exercise:9
 ##Get distinct city and count from Customers table
+#Combine
 select distinct city, count(city) from Customers group by city;
+#Individual
+select count(city) from Customers ;
+select distinct city from Customers;
 
 #Exercise:10
 ##Get details of all employees excluding employees first names "Sanjay", "Sonia" from employees table
